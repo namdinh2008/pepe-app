@@ -1,0 +1,345 @@
+/* HomePage.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.home-page {
+    background-color: rgb(79, 152, 67);
+    height: 55em;
+  }
+  .bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/HomePage/BgHome.webp');
+    background-repeat: no-repeat;
+    padding: 50px;
+    opacity: 0.1;
+  }
+  .carton {
+    position: relative;
+    bottom: 700px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ton {
+    height: fit-content;
+  }
+  
+  .car {
+    height: 400px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .connect-icon {
+    width: 84%;
+  }
+
+  .connect-icon img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .connect-icon img:hover {
+    transform: scale(1.2); 
+    filter: brightness(1.2);
+  }
+
+  .title {
+    font-size: 4rem;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: "Xanh Mono", monospace;
+    letter-spacing: 0px;
+  }
+  
+  .description {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    font-weight: 400;
+    width: 84%;
+    text-align: justify;
+  }
+
+  .image-home {
+    position: relative;
+    bottom: 60px;
+  }
+
+  .platforms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* Transparent platform button */
+  .platform-btn {
+    font-family: "Xanh Mono", monospace;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white; /* Text color */
+    background-color: transparent; /* No background color */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth hover animation */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Hover effect */
+  .platform-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light overlay on hover */
+    border-color: rgba(255, 255, 255, 0.8); /* Brighter border on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+
+  .icon-plf {
+    width: 40px;
+    
+  }
+  .name-class {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media only screen and (max-width: 1770px) {
+    .description {
+      width: 100%;
+    }
+    .connect-icon {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1620px) {
+    .carton {
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 1380px) {
+    .carton {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 1210px) {
+    .carton {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 1070px) {
+    .carton {
+      width: 100%;
+    }
+    .description {
+      padding-left: 30px;
+    }
+    .connect-icon {
+      padding-left: 30px;
+    }
+    .title {
+      padding-left: 20px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .title-image {
+      width: 400px;
+    }
+    .image-home {
+      bottom: 10px;
+    }
+  }
+  @media only screen and (max-width: 920px) {
+    .title {
+      font-size: 3em;
+    }
+    .description {
+      font-size: 1.7em;
+    }
+    .title-image {
+      width: 300px;
+    }
+    .home-page {
+      height: 38em;
+    }
+    .carton {
+      bottom: 600px;
+    }
+    .platforms {
+      position: relative;
+      bottom: 100px;
+    }
+  }
+  @media only screen and (max-width: 820px) {
+    .title {
+      font-size: 30px;
+      margin-top: 50px;
+      text-align: center;
+      padding-right: 120px;
+    }
+    .description {
+      font-size: 1.5em;
+      width: 80%;
+    }
+    .connect-icon img {
+      width: 80%;
+    }
+    .connect-icon {
+      width: 80%;
+    }
+    .title-image {
+      position: relative;
+      right: 70px;
+    }
+    .platform-btn {
+      padding: 6px 16px;
+    margin-bottom: 7px;
+    height: 45px;
+    font-size: 24px;
+    }
+    .icon-plf {
+      width: 30px;
+    }
+    .home-page {
+      height: 30em;
+    }
+    .carton {
+      bottom: 500px;
+    }
+  }
+  @media only screen and (max-width: 780px) {
+    .car {
+      flex-direction: column;
+      width: 100%;
+    }
+    .ton {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .title {
+      padding: 0;
+      align-items: center;
+    }
+    .description {
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .connect-icon {
+      padding: 0;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .image-home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 230px;
+    }
+    .title-image {
+      margin-left: 70px;
+      padding-left: 50px;
+    }
+    .home-page {
+      height: 50em;
+    }
+    .carton {
+      bottom: 800px;
+    }
+    .platform-btn {
+      padding: 6px 10px;
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+  .platforms {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-home {
+    top: 330px;
+  }
+  .home-page {
+    height: 55em;
+  }
+  .carton {
+    bottom: 900px;
+  }
+  
+}
+@media only screen and (max-width: 648px) {
+  .platforms {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 625px) {
+  .platforms {
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .platform-btn {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+  .home-page {
+    height: 70em;
+  }
+  .carton {
+    bottom: 1150px;
+  }
+  .image-home {
+    top: 600px;
+  }
+  .icon-plf {
+    bottom: 23px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .icon-plf {
+    width: 25px;
+  }
+  .image-home {
+    top: 570px;
+  }
+  .platform-btn {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .title {
+    font-size: 25px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .platforms {
+    margin-top: 0;
+  }
+
+}
+
+
+
+

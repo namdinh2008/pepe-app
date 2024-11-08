@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Sen:wght@400..800&family=Xanh+Mono:ital@0;1&display=swap');
+
+/* General container styling */
+.container-fluid {
+  background-color: rgb(79, 152, 67);
+  font-family: "Noto Serif Grantha", serif;
+}
+
+.tokenomics-container {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-height: 80vh;
+}
+
+/* Title styling */
+.tokenomics-title {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+/* Box content layout */
+.box-content {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Token Supply styling */
+.token-supply {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.supply-amount {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+/* Details box styling */
+.details-box {
+  background-color: #114a14;
+  padding: 20px;
+  border-radius: 0 15px 0 15px;
+  border: 2px solid white;
+  width: 100%;
+}
+
+.details-box p {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+/* Chart container styling */
+.chart-circle {
+  padding-top: 80px;
+}
+
+/* Pepe image styling */
+.pepe-image {
+  width: 100%;
+
+}
+
+.border-page img {
+  width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1160px) {
+    .tokenomics-title {
+      font-size: 60px;
+    }
+    .supply-amount {
+      font-size: 30px;
+    }
+    .details-box {
+      font-size: 20px;
+    }
+}
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .tokenomics-title {
+    font-size: 5rem;
+  }
+
+  .supply-amount {
+    font-size: 2.5rem;
+  }
+
+  .details-box p {
+    font-size: 1.2rem;
+  }
+
+  .box-content {
+    width: 80%;
+  }
+}
+@media (max-width: 780px) {
+  .tokenomics-title {
+    font-size: 3rem;
+  }
+  .supply-amount {
+    font-size: 1.6rem;
+  }
+  .details-box p{
+    font-size: 1rem;
+  }
+}
+
+
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+  .tokenomics-title {
+    font-size: 4rem;
+  }
+
+  .supply-amount {
+    font-size: 2rem;
+  }
+
+  .box-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .details-box {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .pepe-image {
+    width: 300px;
+  }
+}
+
+/* Extra small screens (mobile devices) */
+@media (max-width: 576px) {
+  .tokenomics-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .supply-amount {
+    font-size: 1.5rem;
+  }
+
+  .details-box p {
+    font-size: 1rem;
+  }
+
+  .chart-circle {
+    padding-top: 40px;
+  }
+
+  .pepe-image {
+    width: 250px;
+  }
+}

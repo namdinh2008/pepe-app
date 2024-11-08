@@ -1,0 +1,128 @@
+.navbar {
+    width: 100%;
+    background-color: rgb(79, 152, 67);
+    height: 8vw;
+    border-bottom: 3px solid rgba(6, 24, 7, 0.34);
+    font-family: "Noto Serif Grantha", serif;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5vw;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  
+  .nav-links a:hover {
+    color: #b3b2b2;
+  }
+
+  .home {
+    color: #b3b2b2 !important;
+  }
+  
+  .buy-now {
+    background-color: rgb(79, 152, 67);
+    color: white;
+    border: 1px white solid;
+    padding: 1.3% 3em;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  
+  .buy-now:hover {
+    background-color: rgb(96, 187, 82);
+  }
+  .contai {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .packet {
+    background-color: rgb(96, 187, 82);
+    border: none;
+  }
+
+  @media screen and (max-width: 1750px){
+   .nav-links a {
+    font-size: 20px;
+   } 
+  }
+
+  @media screen and (max-width: 1600px){
+    .contai {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px){
+    .contai {
+      width: 98%;
+    }
+    .navbar {
+      height: 100px;
+    }
+  }
+
+  /* Media Queries for Mobile */
+  @media screen and (max-width: 1000px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links-mobile {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 98px;
+      left: 0;
+      width: 100%;
+      background-color: rgb(96, 187, 82);
+      z-index: 100;
+    }
+  
+    .nav-links-mobile li {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+
+    .nav-links-mobile li a {
+      text-decoration: none;
+      font-size: 20px;
+      font-size: 600;
+      color: #fff;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+
+    .packet {
+    background-color: rgb(96, 187, 82);
+    border: none;
+    
+  }
+    .buy-now {
+      display: none;
+    }
+  }
