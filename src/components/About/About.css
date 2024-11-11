@@ -31,7 +31,8 @@
 }
 
 .header-text {
-    font-size: 36px; /* Smaller font size for mobile */
+    font-family: 'Evermore', sans-serif;
+    font-size: 2em; /* Smaller font size for mobile */
     text-align: center;
     margin-top: 20px;
     color: white;
@@ -43,6 +44,7 @@
     width: 100%;
     line-height: 1.5;
     color: white;
+    font-family: "Helvetica W01 Roman", sans-serif;
 }
 @media only screen and (max-width: 400px) {
     .review {
@@ -70,6 +72,7 @@
 
     .header-text {
         font-size: 48px; /* Increase font size for tablets */
+        padding-right: 70px;
     }
 
     .review {
@@ -85,7 +88,7 @@
     }
 
     .header-text {
-        font-size: 100px; /* Original font size for desktops */
+        font-size: 60px; /* Original font size for desktops */
         position: relative;
         bottom: 40px;
     }

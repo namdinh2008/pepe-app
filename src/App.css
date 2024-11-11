@@ -1,9 +1,17 @@
+@font-face {
+  font-family: 'Evermore';
+  src: url('./fonts/evermore/Evermore.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GentyDemo-Regular';
+  src: url('./fonts/genty/GentyDemo-Regular.ttf') format('truetype');
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Serif Grantha", serif;
 }
 
 body {

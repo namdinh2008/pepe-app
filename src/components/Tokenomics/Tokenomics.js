@@ -17,7 +17,7 @@ const Tokenomics = () => {
         {/* Token Supply */}
       <div className='content-text'>
       <div className="token-supply">
-        <p className="supply-amount">token supply:</p>
+        <p className="supply-amount">token supply :</p>
         <h3 className="supply-amount">420,690,000,000,000</h3>
       </div>
       {/* Details Box */}

@@ -2,7 +2,7 @@
 
 .box {
   background-color: rgb(79, 152, 67);
-  font-family: "Noto Serif Grantha", serif;
+  font-family: 'Evermore', sans-serif;
 }
 
 .border-page img {
@@ -11,7 +11,7 @@
 
 .pack {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1280px;
   text-align: center;
   margin: 0 auto;
 }
@@ -21,6 +21,7 @@ h1 {
   color: white;
   margin-bottom: 20px;
   font-weight: 900;
+  letter-spacing: 1px;
 }
 
 /* Step Card Styling */
@@ -50,9 +51,11 @@ h1 {
   font-size: 28px;
   margin: 0 0 10px;
   text-transform: lowercase;
+  letter-spacing: 1px;
 }
 
 .content p {
+  font-family: "Comfortaa", sans-serif;
   margin-top: 15px;
   font-size: 16px;
   font-weight: 100;
@@ -90,15 +93,15 @@ h1 {
   }
 
   h1 {
-    font-size: 64px; /* Increase font size for larger screens */
+    font-size: 40px; /* Increase font size for larger screens */
   }
 
   .content h2 {
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .content p {
-    font-size: 18px;
+    font-size: 16px;
     text-align: start;
   }
 }
@@ -134,19 +137,16 @@ h1 {
     border: none;
 }
 
-/* Hide scrollbar for WebKit browsers */
 iframe::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for Firefox */
 iframe {
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
 }
 
-/* For Internet Explorer 10+ */
 iframe {
-    -ms-overflow-style: none; /* IE 10+ */
+    -ms-overflow-style: none;
 }
 
 }

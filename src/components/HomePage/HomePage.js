@@ -27,7 +27,7 @@ const HomePage = () => {
         <div className="flex car gap-2">
           <div className="ton">
             <h1 className="title">
-              <em>$PEPE</em>
+              $pepe
             </h1>
             <p className="description">
               The most memeable memecoin in existence. The dogs have had their

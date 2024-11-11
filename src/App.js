@@ -7,6 +7,7 @@ import Tokenomics from "./components/Tokenomics/Tokenomics";
 import Roadmap from "./components/Roadmap/Roadmap";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router } from 'react-router-dom';
+import './App.css';
 
 
 function App() {

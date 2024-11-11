@@ -1,7 +1,6 @@
 /* General container styling */
 .container-fluid {
     background-color: rgb(79, 152, 67);
-    font-family: "Noto Serif Grantha", serif;
 }
 
 .container {
@@ -14,20 +13,22 @@
     height: auto;
     color: white;
     gap: 20px;
+    max-width: 1280px;
+    font-family: 'Evermore', sans-serif;
 }
 
 /* Title styling */
 .text-title {
-    font-size: 100px;
+    font-size: 50px;
     margin-bottom: 40px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 /* Phase box styling */
 .phase-box {
     text-align: center;
     background-color: #114a14;
-    width: 80%;
     margin: 20px auto;
     padding: 20px 16px;
     border-radius: 0 20px 0 20px;
@@ -37,6 +38,7 @@
 
 .phase-box p {
     margin-bottom: 10px;
+    font-family: "Comfortaa", sans-serif;
 }
 
 /* Image background styling */
@@ -59,7 +61,7 @@
     }
 
     .text-title {
-        font-size: 60px;
+        font-size: 35px;
     }
 
     .phase-box {

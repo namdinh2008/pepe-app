@@ -3,7 +3,7 @@
 /* General container styling */
 .container-fluid {
   background-color: rgb(79, 152, 67);
-  font-family: "Noto Serif Grantha", serif;
+  
 }
 
 .tokenomics-container {
@@ -15,13 +15,14 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  min-height: 80vh;
+  font-family: 'Evermore', sans-serif;
 }
 
 /* Title styling */
 .tokenomics-title {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 /* Box content layout */
@@ -31,6 +32,7 @@
   width: 60%;
   align-items: center;
   gap: 40px;
+  max-width: 1280px;
 }
 
 /* Token Supply styling */
@@ -41,13 +43,15 @@
 }
 
 .supply-amount {
-  font-size: 45px;
+  font-size: 25px;
   font-weight: bold;
   line-height: 50px;
+  letter-spacing: 1px;
 }
 
 /* Details box styling */
 .details-box {
+  font-family: "Comfortaa", sans-serif;
   background-color: #114a14;
   padding: 20px;
   border-radius: 0 15px 0 15px;
@@ -57,7 +61,7 @@
 
 .details-box p {
   margin: 0 0 20px 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: start;
 }
 
@@ -79,27 +83,27 @@
 /* Media Queries for Responsiveness */
 @media only screen and (max-width: 1160px) {
     .tokenomics-title {
-      font-size: 60px;
-    }
-    .supply-amount {
       font-size: 30px;
     }
-    .details-box {
+    .supply-amount {
       font-size: 20px;
+    }
+    .details-box {
+      font-size: 13px;
     }
 }
 /* Medium screens (tablets) */
 @media (max-width: 992px) {
   .tokenomics-title {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 
   .supply-amount {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
   }
 
-  .details-box p {
-    font-size: 1.2rem;
+  .details-box {
+    font-size: 1rem;
   }
 
   .box-content {
@@ -108,13 +112,13 @@
 }
 @media (max-width: 780px) {
   .tokenomics-title {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .supply-amount {
-    font-size: 1.6rem;
-  }
-  .details-box p{
     font-size: 1rem;
+  }
+  .details-box {
+    font-size: 0.5rem;
   }
 }
 
@@ -122,11 +126,11 @@
 /* Small screens (mobile devices) */
 @media (max-width: 768px) {
   .tokenomics-title {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .supply-amount {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .box-content {
@@ -137,7 +141,7 @@
 
   .details-box {
     width: 100%;
-    padding: 16px;
+    padding: 13px;
   }
 
   .pepe-image {
@@ -148,16 +152,15 @@
 /* Extra small screens (mobile devices) */
 @media (max-width: 576px) {
   .tokenomics-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
   }
 
   .supply-amount {
-    font-size: 1.5rem;
+    font-size: 0.7rem;
   }
 
-  .details-box p {
-    font-size: 1rem;
+  .details-box {
+    font-size: 0.3rem;
   }
 
   .chart-circle {
