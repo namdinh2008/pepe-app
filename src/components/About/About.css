@@ -22,6 +22,7 @@
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 24px;
+    align-items: center;
 }
 
 .main img {
@@ -34,37 +35,59 @@
     font-family: 'Evermore', sans-serif;
     font-size: 2em; /* Smaller font size for mobile */
     text-align: center;
-    margin-top: 20px;
     color: white;
+    margin-bottom: 50px;
+    text-shadow:
+    1px 1px 0 black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
 }
 
 .review {
-    font-size: 18px; /* Smaller font size for mobile */
+    font-size: 20px; /* Smaller font size for mobile */
     margin: 10px 0;
     width: 100%;
     line-height: 1.5;
     color: white;
-    font-family: "Helvetica W01 Roman", sans-serif;
+    font-weight: 500;
+    font-family: "Comfortaa", sans-serif;
 }
-@media only screen and (max-width: 400px) {
+
+.img-about {
+    width: 200px;
+}
+
+.img-about img {
+    display: block;
+    width: 100%;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-1 {
+    order: 1;
+}
+@media only screen and (max-width: 460px) {
     .review {
         font-size: 14px;
     }
+
 }
 
 @media only screen and (max-width: 810px) {
-    .order-2 {
-        order: 2;
-    }
-
-    .order-1 {
-        order: 1;
+    .header-text {
+        font-size: 23px; /* Increase font size for tablets */
+        margin-bottom: 20px;
+        text-align: start;
     }
 }
 
 
 /* Media Queries for larger screens */
-@media (min-width: 780px) {
+@media (min-width: 920px) {
     .main {
         flex-direction: row; /* Row layout for larger screens */
         width: 80%; /* Adjust width for tablets */
@@ -80,24 +103,40 @@
         width: 90%;
         
     }
+    .img-about {
+        width: 2300px;
+    }
+    .order-2 {
+        order: 1;
+    }
+
+    .order-1 {
+        order: 2;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .main {
         width: 60%; /* Further reduce width for large screens */
     }
 
     .header-text {
-        font-size: 60px; /* Original font size for desktops */
+        font-size: 50px; /* Original font size for desktops */
         position: relative;
-        bottom: 40px;
+        bottom: 20px;
+        padding-left: 100px;
     }
 
     .review {
-        font-size: 23px;
+        font-size: 22px;
         width: 80%;
         margin: 0 auto;
         position: relative;
         bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .img-about {
+        width: 2300px;
     }
 }

@@ -8,7 +8,7 @@ const About = () => {
     <section className="background" id="about">
         <img className="full" src={BorderPath}></img>
       <div className="d-flex main">
-        <div className="order-2">
+        <div className="order-2 img-about">
           <img src={mmga1}></img>
         </div>
         <div className="order-1"> 

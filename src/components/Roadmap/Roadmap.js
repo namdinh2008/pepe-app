@@ -11,8 +11,8 @@ const Roadmap = () => {
             <img src={BorderPath}></img>
         </div>
         <div className='container'>
-            <div className='img-bg'><img className='photo-resire' src={pepepissingnobackground}></img></div>
-            <div>
+            <div className='img-bg order-0'><img className='photo-resire' src={pepepissingnobackground}></img></div>
+            <div className='order-1'>
                 <h2 className="text-title">roadmap</h2>
                 <div className="phase-box">
                     <p>Phase 1: Meme</p>
@@ -20,7 +20,7 @@ const Roadmap = () => {
                     <p>Phase 3: Meme Takeover</p>
                 </div>
             </div>
-            <div className='img-bg'><img className='photo-resire' src={pepemc}></img></div>
+            <div className='img-bg order-2'><img className='photo-resire' src={pepemc}></img></div>
         </div>
     </div>
   )

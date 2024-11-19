@@ -59,8 +59,8 @@ const HowToBuy = () => {
           </div>
         </div>
 
-        <div className="step-card">
-          <div className="icon-wrapper special-edit">
+        <div className="step-card special-edit">
+          <div className="icon-wrapper">
             <img src={Switch} alt="Switch Icon"></img>
           </div>
           <div className="content">
@@ -74,6 +74,7 @@ const HowToBuy = () => {
         </div>
       </div>
       <div className="extras">
+        <div className="extras-item">
         <div className="iframe-wrapper">
           <iframe
             title="Embedded Website"
@@ -82,6 +83,7 @@ const HowToBuy = () => {
         </div>
         <div className="image-wrapper">
           <img src={PePeImg} alt="Pepe" />
+        </div>
         </div>
       </div>
     </div>

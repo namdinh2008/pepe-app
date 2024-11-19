@@ -1,13 +1,14 @@
 /* HomePage.css */
 .home-page {
     background-color: rgb(79, 152, 67);
-    height: 55em;
+    height: 60em;
   }
   .bg {
     width: 100%;
     height: 100%;
     background-image: url('../../assets/HomePage/BgHome.webp');
     background-repeat: no-repeat;
+    background-position: bottom;
     padding: 50px;
     opacity: 0.1;
     max-width: 2000px;
@@ -30,17 +31,22 @@
   
   .car {
     height: 400px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .connect-icon {
+    padding-top: 20px;
     width: 84%;
   }
 
   .connect-icon img {
+    width: 70px;
     transition: transform 0.3s ease, filter 0.3s ease;
   }
 
@@ -51,43 +57,50 @@
 
   .title {
     font-family: 'GentyDemo-Regular', sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     color: #f0f0f0;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     padding-left: 10px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-shadow:
+    1px 1px 0 black,
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black;
   }
   
   .description {
     font-family: "Comfortaa", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin-bottom: 30px;
     color: #f0f0f0;
     font-weight: 400;
-    width: 84%;
-    text-align: justify;
+    width: 90%;
+    line-height: 35px;
   }
 
   .image-home {
     position: relative;
-    bottom: 60px;
+    bottom: 40px;
   }
 
   .platforms {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
     gap: 15px;
-    padding: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   /* Transparent platform button */
   .platform-btn {
     font-family: 'Evermore', sans-serif;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin-bottom: 10px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 16px;
+    font-weight: 400;
     color: white; /* Text color */
     background-color: transparent; /* No background color */
     border: 2px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
@@ -99,6 +112,8 @@
     align-items: center;
     justify-content: space-between;
     letter-spacing: 1px;
+    width: 300px;
+    height: 50px;
   }
   
   /* Hover effect */
@@ -110,16 +125,22 @@
 
   .icon-plf {
     width: 40px;
-    
+    display: flex;
+    align-items: center;
   }
   .name-class {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+  }
+
+  .title-image {
+    width: 400px;
   }
 
   @media only screen and (max-width: 1770px) {
     .description {
-      width: 100%;
+      width: 90%;
     }
     .connect-icon {
       width: 100%;
@@ -162,31 +183,32 @@
       bottom: 10px;
     }
   }
-  @media only screen and (max-width: 920px) {
+  @media only screen and (max-width: 970px) {
     .title {
       font-size: 3em;
     }
     .description {
-      font-size: 1.7em;
+      font-size: 1.5em;
     }
     .title-image {
       width: 300px;
     }
     .home-page {
-      height: 38em;
+      height: 50em;
     }
     .carton {
       bottom: 600px;
     }
     .platforms {
       position: relative;
-      bottom: 100px;
+      bottom: 50px;
     }
     .platform-btn {
       font-size: 16px;
+      width: 16rem;
     }
   }
-  @media only screen and (max-width: 820px) {
+  @media only screen and (max-width: 910px) {
     .title {
       font-size: 40px;
       margin-top: 50px;
@@ -194,7 +216,7 @@
       padding-right: 120px;
     }
     .description {
-      font-size: 1.5em;
+      font-size: 1.2em;
       width: 80%;
       margin-bottom: 10px;
     }
@@ -212,16 +234,20 @@
       padding: 6px 16px;
     margin-bottom: 7px;
     height: 45px;
-    font-size: 16px;
+    font-size: 13px;
+    width: 220px;
     }
     .icon-plf {
       width: 30px;
     }
     .home-page {
-      height: 30em;
+      height: 45em;
     }
     .carton {
-      bottom: 500px;
+      bottom: 600px;
+    }
+    .bg {
+      background-position: center;
     }
   }
   @media only screen and (max-width: 780px) {
@@ -237,11 +263,15 @@
     .title {
       padding: 0;
       align-items: center;
+      font-size: 60px;
     }
     .description {
       padding: 0;
       margin-left: auto;
       margin-right: auto;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
     }
     .connect-icon {
       padding: 0;
@@ -259,7 +289,7 @@
       padding-left: 50px;
     }
     .home-page {
-      height: 50em;
+      height: 58em;
     }
     .carton {
       bottom: 800px;
@@ -280,10 +310,10 @@
     margin-right: auto;
   }
   .image-home {
-    top: 330px;
+    top: 350px;
   }
   .home-page {
-    height: 55em;
+    height: 63em;
   }
   .carton {
     bottom: 900px;
@@ -291,9 +321,6 @@
   
 }
 @media only screen and (max-width: 648px) {
-  .platforms {
-    margin-top: 20px;
-  }
   .platform-btn {
     font-size: 14px;
   }
@@ -301,7 +328,7 @@
 @media only screen and (max-width: 625px) {
   .platforms {
     grid-template-columns: repeat(1, 1fr);
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -309,17 +336,17 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 28px 16px;
+    padding: 30px 25px;
     font-size: 20px;
   }
   .home-page {
-    height: 90em;
+    height: 108em;
   }
   .carton {
-    bottom: 1450px;
+    bottom: 1600px;
   }
   .image-home {
-    top: 700px;
+    top: 800px;
   }
   .icon-plf {
     width: 40px;
@@ -332,35 +359,46 @@
     width: 100px;
   }
   .platforms {
-    margin-top: 170px;
+    margin-top: 120px;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .connect-icon img {
-    width: 90px;
+    width: 100px;
+  }
+  .connect-icon {
+    width: 90%;
+  }
+  .platforms {
+    margin-top: 200px;
+  }
+  .description {
+    font-size: 23px;
   }
 }
 
 @media only screen and (max-width: 460px) {
-  .connect-icon img {
-    width: 80px;
-  }
   .platform-btn {
     font-size: 16px;
   }
-
+  .connect-icon {
+    width: 100%;
+  }
+  .description {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 410px) {
   .connect-icon img {
-    width: 60px;
+    width: 90px;
   }
   .description {
     font-size: 16px;
   }
   .platforms {
-    margin-top: 30px;
+    margin-top: 120px;
   }
 }
 
