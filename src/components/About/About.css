@@ -63,25 +63,26 @@
     width: 100%;
 }
 
-.order-2 {
+.orders-2 {
     order: 2;
 }
 
-.order-1 {
+.orders-1 {
     order: 1;
 }
 @media only screen and (max-width: 460px) {
     .review {
         font-size: 14px;
     }
-
+    .header-text {
+        text-align: start;
+    }
 }
 
 @media only screen and (max-width: 810px) {
     .header-text {
         font-size: 23px; /* Increase font size for tablets */
         margin-bottom: 20px;
-        text-align: start;
     }
 }
 
@@ -106,11 +107,11 @@
     .img-about {
         width: 2300px;
     }
-    .order-2 {
+    .orders-2 {
         order: 1;
     }
 
-    .order-1 {
+    .orders-1 {
         order: 2;
     }
 }

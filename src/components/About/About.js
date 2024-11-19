@@ -8,10 +8,10 @@ const About = () => {
     <section className="background" id="about">
         <img className="full" src={BorderPath}></img>
       <div className="d-flex main">
-        <div className="order-2 img-about">
+        <div className="orders-2 img-about">
           <img src={mmga1}></img>
         </div>
-        <div className="order-1"> 
+        <div className="orders-1"> 
           <h1 className="header-text">about</h1>
           <p className="review">
             Pepe is tired of watching everyone play hot potato with the endless
