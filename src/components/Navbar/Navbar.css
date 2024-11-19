@@ -118,6 +118,9 @@
 
   /* Media Queries for Mobile */
   @media screen and (max-width: 1020px) {
+    .contai {
+      width: 85%;
+    }
     .nav-links {
       display: none;
     }
